@@ -35,6 +35,11 @@ If you edit the file, you must reload the crontab service to refresh
 >sudo service crond reload
 ```
 
+In CentOS the crond service logs, lives in /var/log/cron
+```
+> sudo tail -F /var/log/cron
+```
+
 Another cron scheduled configuration could be:
 ```
 @yearly        Run once a year, "0 0 1 1 *".
